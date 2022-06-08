@@ -4,16 +4,82 @@
   box-sizing: border-box;
   font-family: sans-serif;
   font-weight: 400;
+  color: #212121;
 }
 
-main {
+/* header */
+header {
+  background-color: white;
   width: 100%;
+  padding: 0 20px;
+  border-bottom: 1px solid #b6b8bb;
+  position: fixed;
 }
 
+header *{
+  color: #5F6368;
+}
+
+header > div {
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > div > div:first-of-type {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+header > div > div:first-of-type img{
+  width: 100px;
+}
+
+header span {
+  font-size: 1.3rem;
+}
+
+header > div > div:last-of-type {
+  display: flex;
+  align-items: center;
+}
+
+#profileImg {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url(https://www.directivegroup.com/wp-content/uploads/2017/03/smile-9047-9380-hd-wallpapers-1.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-left: 20px;
+}
+
+header nav {
+  padding-bottom: 10px;
+}
+
+header a {
+  color: #5F6368;
+  margin-top: 20px;
+  margin-right: 40px;
+  padding-bottom: 10px;
+}
+
+header nav > a.active {
+  color: #3367D6;
+  border-bottom: 4px solid #3367D6;
+  padding-bottom: 7px;
+}
+/* /header */
+
+
+/* main */
 .container {
   width: 70%;
   margin: 0 auto;
-  padding: 30px 0 50px;
+  padding: 120px 0 50px;
 }
 
 .container div {
@@ -29,13 +95,18 @@ p {
   padding-bottom: 30px;
   font-size: .9rem;
   line-height: 1.5rem;
-  color: #212121;
+}
+
+a > i {
+  margin-left: 3px;
+  font-size: .7rem;
+  color: #3367D6;
 }
 
 h2 {
   line-height: 2.3rem;
   color: #3C4043;
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
 h3 {
@@ -51,7 +122,6 @@ ol {
 li {
   padding-left: 20px;
   font-size: .9rem;
-  color: #212121;
 }
 
 ol ol li {
@@ -59,3 +129,4 @@ ol ol li {
   padding-left: 20px;
   list-style-type: lower-latin;
 }
+/* /main */
